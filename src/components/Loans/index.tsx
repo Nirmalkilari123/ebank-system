@@ -1,24 +1,23 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-function index() {
+function Loans() {
   return (
     <body>
       <Navbar />
-      <h1>Profile</h1>
-      <h2>Vite + React + TS (Hamburger + Responsive + Router)</h2>
+      <h1>Loan</h1>
       <footer className="footer">
         <p className="footer-by">
           A project by{" "}
           <a
-            href="https://twitter.com/erdemmkarakas"
+            href="https://twitter.com/Nirmalkilari"
             rel="noopener"
             className="small-link"
           >
-            Erdem Karakaş
+            Nirmalkilari
           </a>
           <a
-            href="https://twitter.com/erdemmkarakas"
+            href="https://twitter.com/Nirmalkilari"
             rel="noopener"
             target="_blank"
             className="no-link icon-twitter"
@@ -30,4 +29,4 @@ function index() {
   );
 }
 
-export default index;
+export default Loans;

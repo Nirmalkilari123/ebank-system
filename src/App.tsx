@@ -2,19 +2,21 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import DashBoard from "./components/DashBoard";
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
-import Profile from "./components/Profile";
-import Help from "./components/Help";
-import Works from "./components/Works";
+import CreditCard from "./components/CreditCard";
+import ContactUs from "./components/ContactUs";
+import Loans from "./components/Loans";
 import Register from "./components/Register";
 
 function App() {
   return (
     <Routes>
-      <Route path="profile" element={<Profile />} />
-      <Route path="works" element={<Works />} />
-      <Route path="help" element={<Help />} />
+      <Route path="dashboard" element={<DashBoard />} />
+      <Route path="creditcard" element={<CreditCard />} />
+      <Route path="loans" element={<Loans />} />
+      <Route path="contactus" element={<ContactUs />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
       <Route path="/" element={<Home />} />

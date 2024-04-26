@@ -37,7 +37,7 @@ function Navbar() {
     <header className="header">
       <div className="header__content">
         <Link to="/" className="header__content__logo">
-          Navbar
+          <img src="https://res.cloudinary.com/de4euasql/image/upload/v1713066064/ebank-login-img_lnoldg.png" className="img" />
         </Link>
         <nav
           className={`${"header__content__nav"} 
@@ -49,17 +49,20 @@ function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/profile">Profile</Link>
+              <Link to="/Dashboard">Dashboard</Link>
             </li>
             <li>
-              <Link to="/Works">Browse Works</Link>
+              <Link to="/creditcard">CreditCard</Link>
             </li>
             <li>
-              <Link to="/help">Help</Link>
+              <Link to="/loans">Loans</Link>
+            </li>
+            <li>
+              <Link to="/contactus">ContactUs</Link>
             </li>
 
             <Link to="/register">
-              <button className="btn">Register</button>
+              <button className="btn">Register Account</button>
             </Link>
             <Link to="/login">
               <button className="btn btn__login">Login</button>

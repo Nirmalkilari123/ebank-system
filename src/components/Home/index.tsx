@@ -6,16 +6,15 @@ function Home() {
     <body>
       <Navbar />
       <h1>Home</h1>
-      <h2>Vite + React + TS (Hamburger + Responsive + Router)</h2>
       <footer className="footer">
         <p className="footer-by">
           A project by{" "}
           <a
-            href="https://twitter.com/erdemmkarakas"
+            href="https://twitter.com/Nirmalkilari"
             rel="noopener"
             className="small-link"
           >
-            Erdem Karakaş
+            Nirmalkilari
           </a>
           <a
             href="https://twitter.com/erdemmkarakas"

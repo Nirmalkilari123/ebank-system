@@ -6,19 +6,18 @@ function NotFound() {
     <body>
       <Navbar />
       <h1>NOT FOUND</h1>
-      <h2>Vite + React + TS (Hamburger + Responsive + Router)</h2>
       <footer className="footer">
         <p className="footer-by">
           A project by{" "}
           <a
-            href="https://twitter.com/erdemmkarakas"
+            href="https://twitter.com/Nirmalkilari"
             rel="noopener"
             className="small-link"
           >
-            Erdem Karakaş
+            Nirmalkilari
           </a>
           <a
-            href="https://twitter.com/erdemmkarakas"
+            href="https://twitter.com/Nirmalkilari"
             rel="noopener"
             target="_blank"
             className="no-link icon-twitter"
