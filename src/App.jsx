@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import DashBoard from "./components/DashBoard";
-import NotFound from "./components/NotFound";
 import Login from "./components/Login";
 import CreditCard from "./components/CreditCard";
 import ContactUs from "./components/ContactUs";
@@ -20,7 +19,6 @@ function App() {
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
       <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

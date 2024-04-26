@@ -1,17 +1,8 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar";
 
-interface FormData {
-  id: string;
-  name: string;
-  email: string;
-  password: string;
-  dateofbirth: string;
-  dateofjoin: string;
-}
-
-const Register: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
+const Register = () => {
+  const [formData, setFormData] = useState({
     id: "",
     name: "",
     email: "",
@@ -20,15 +11,15 @@ const Register: React.FC = () => {
     dateofjoin: "",
   });
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Form submitted");
-  
+
     try {
       const response = await fetch("http://localhost:3000/addregister", {
         method: "POST",
@@ -37,7 +28,7 @@ const Register: React.FC = () => {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
         console.log("Registration successful!");
         // Redirect or show a success message

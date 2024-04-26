@@ -30,19 +30,17 @@ function Navbar() {
   }, [size.width, menuOpen]);
 
   const menuToggleHandler = () => {
-    setMenuOpen((p) => !p);
+    setMenuOpen((prev) => !prev);
   };
 
   return (
     <header className="header">
       <div className="header__content">
         <Link to="/" className="header__content__logo">
-          <img src="https://res.cloudinary.com/de4euasql/image/upload/v1713066064/ebank-login-img_lnoldg.png" className="img" />
+          <img src="https://res.cloudinary.com/de4euasql/image/upload/v1713066064/ebank-login-img_lnoldg.png" className="img" alt="Logo" />
         </Link>
         <nav
-          className={`${"header__content__nav"} 
-          ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""} 
-          }`}
+          className={`header__content__nav ${menuOpen && size.width < 768 ? "isMenu" : ""}`}
         >
           <ul>
             <li>
